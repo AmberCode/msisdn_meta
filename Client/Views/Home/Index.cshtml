@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-4">
+        <div class="input-group input-daterange datepicker">
+            <div class="form-row">
+                <div class="form-group col-4">
+                    <label for="fromDate">Nuo</label>
+                    <input id="fromDate" type="text" class="form-control">
+                </div>
+                <div class="col-2"></div>
+                <div class="form-group col-4">
+                    <label for="fromDate">Iki</label>
+                    <input id="toDate" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <button id="filterButton" type="button" class="btn btn-primary">Filtruoti</button>
+    </div>
+</div>
+
+<div class="row">
+    <br />
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Reikšmė</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Viso SMS:</th>
+                    <td><label id="smsCountLabel">0</label></td>
+                </tr>
+                <tr>
+                    <th scope="row">Viso skambučių:</th>
+                    <td><label id="callCountLabel">0</label></td>
+                </tr>
+                <tr>
+                    <th scope="row">Top 5 Msisdn (SMS):</th>
+                    <td><ul id="topSmsList"></ul></td>
+                </tr>
+                <tr>
+                    <th scope="row">Top 5 Msisdn (CALL):</th>
+                    <td><ul id="topCallList"></ul></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
